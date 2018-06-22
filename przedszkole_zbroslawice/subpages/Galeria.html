@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Przedszkole Zbrosławice</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+
+</head>
+<body>
+
+<header>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a class='home' href="../index.html" title="HOME"><span class="icons home-font"></span> Home</a>
+                </li>
+                <li class="has-children">
+                    <a href="#" title="O przedszkolu">O przedszkolu <span class="icons arrow-down"></span></a>
+                    <ul>
+                        <li>
+                            <a href="#" title="Aktualności">Aktualności</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Koncepcja pracy">Koncepcja Pracy</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Statut przedszkola">Statut przedszkola</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Historia">Historia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a href="#" title="Dla rodziców">Dla rodzów <span class="icons arrow-down"></span> </a>
+                    <ul>
+                        <li>
+                            <a href="#" title="Rada rodziców">Rada Rodziców</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Grupy">Grupy</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Rozkład dnia">Rozkład dnia</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Harmonogram">Harmonogram</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" title="Galeria">Galeria</a>
+                </li>
+                <li>
+                    <a href="#" title="Kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+
+    <h2> Galeria </h2>
+
+    <div class="gallery-all">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../images/11.jpg">
+                    <img src="../images/11.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../images/22.jpg">
+                    <img src="../images/22.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../images/33.jpg">
+                    <img src="../images/33.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../images/44.jpg">
+                    <img src="../images/44.jpg">
+                </a>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../images/55.jpg">
+                    <img src="../images/55.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container bottom">
+        <div class="content-right">
+            <h3>Kontakt</h3>
+            <p>Przedszkole nr 1 w Zbrosławicach<br></p>
+            <p>ul. Batorego 6, 42-674 Zbrosławice<br></p>
+            <p>email: przedszkolezbrosławice@interia.pl<br></p>
+        </div>
+        <div class="content-left">
+            <div class="weather">
+                <h3>Pogoda dla Zbrosławic</h3>
+                <div class="icon-temp">
+                    <p><i></i></p>
+                    <p><span id="temp"></span>&#8451;</p>
+                </div>
+                <p><span id="descr"></span></p>
+                <p>Ciśnienie: <span id="pre"></span>hPa</p>
+                <p>Wilgotność: <span id="hum"></span>&#37;</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/weather.js"></script>
+</body>
+</html>

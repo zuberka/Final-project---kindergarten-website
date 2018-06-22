@@ -1,0 +1,53 @@
+main {
+  h2 {
+    margin: 50px auto;
+    border-radius: 10%;
+    border: 3px solid #777;
+    color: #777;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+.gallery-all {
+  min-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div {
+  .gallery {
+    border: 1px solid #ccc;
+    &:hover {
+      border: 1px solid #777;
+      padding: 4px;
+    }
+  }
+}
+
+.responsive {
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24.99999%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+

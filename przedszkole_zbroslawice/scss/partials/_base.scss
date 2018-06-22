@@ -1,0 +1,167 @@
+.main-left {
+  padding-top: 30px;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  .hero {
+    padding-left: 100px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: #373737;
+  }
+}
+
+blockquote {
+  color: #444;
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  &::before {
+    content: '\201c';
+    margin-bottom: 20px;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    font-size: 8em;
+    font-family: serif;
+  }
+
+}
+
+.citation {
+  font-style: italic;
+  font-size: 1.6em;
+  text-align: center;
+  &::after {
+    content: '\201d';
+    font-family: serif;
+  }
+}
+
+.author {
+  color: #777;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 300;
+  text-align: right;
+  &::before {
+    content: '\2014';
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+  }
+}
+
+/*Section Main-1*/
+
+.main-1 {
+  padding: 0;
+  background-color: #6ab7ff;
+  height: 350px;
+
+  article {
+    width: 33%;
+    float: left;
+    text-align: center;
+    .content {
+      margin: 15px;
+      background: no-repeat center top;
+      background-size: 75px 75px;
+      padding-top: 85px;
+      position: relative;
+      img {
+        height: 64px;
+        width: 64px;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        right: 150px;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h3 {
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+.main-2 {
+  height: 400px;
+  position: relative;
+}
+
+.left-holder {
+  height: 350px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right-holder {
+  height: 350px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.left-arrow {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 47%;
+  left: -50px;
+}
+
+.right-arrow {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 47%;
+  right: -50px;
+}
+
+.news{
+  height: 400px;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+}
+
+.visible{
+  display: flex;
+}
+
+.image-slider{
+  width: 60%;
+  padding: 30px;
+
+}
+
+.text-slider{
+  min-width: 40%;
+  padding: 30px;
+  h4{
+    font-size: 2em;
+  }
+  p{
+    padding-top: 10px;
+  }
+}
+
+
+
