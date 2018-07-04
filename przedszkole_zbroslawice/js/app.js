@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var leftButton = document.querySelector('.left-arrow');
 
     var listSlider = document.querySelectorAll(".news");
+    console.log(listSlider)
     //console.log(listSlider);
 
     var listArr = [];
@@ -15,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var i = 0; i < listSlider.length; i++) {
         listArr.push(listSlider[i])
     }
-
-    listArr[counter].classList.add('visible');
+console.log(listArr);
+   // listArr[counter].classList.add('visible');
 
     rightButton.addEventListener('click', function () {
         listArr[counter].classList.remove('visible');
@@ -71,17 +72,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    
-    var liArray = document.querySelectorAll('.gallery li');
+//gallery
+
+
+    var galleryArray = document.querySelectorAll('.gallery');
     var bodyEl = document.querySelector('body');
 
-    console.log(liArray);
+    console.log(galleryArray);
     console.log(bodyEl);
 
 
-    for (var i = 0; i < liArray.length; i++) {
+    for (var i = 0; i < galleryArray.length; i++) {
 
-        liArray[i].addEventListener('click', function () {
+        galleryArray[i].addEventListener('click', function () {
 
             var src = this.querySelector('img').src;
 
@@ -101,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             bodyEl.appendChild(newDiv);
 
+
+
             newBtn.addEventListener('click', function () {
 
                 var div = this.parentElement;
@@ -111,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
     }
-
 
 });
 

@@ -1,45 +1,38 @@
-.main-left {
-  padding-top: 30px;
-}
 
 .main {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex: 1 0 auto;
-  .hero {
-    padding-left: 100px;
-    margin-right: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  .main-left {
     text-align: center;
     text-decoration: #373737;
   }
-}
-
-blockquote {
-  color: #444;
-  position: absolute;
-  top: 40px;
-  right: 200px;
-  &::before {
-    content: '\201c';
-    margin-bottom: 20px;
-    position: absolute;
-    top: -50px;
-    left: -30px;
-    font-size: 8em;
-    font-family: serif;
+  .main-right {
+    color: #444;
+    position: relative;
+    &::before {
+      content: '\201c';
+      margin-bottom: 20px;
+      position: absolute;
+      top: -15px;
+      left: -25px;
+      font-size: 6em;
+      font-family: serif;
+    }
   }
-
 }
 
 .citation {
   font-style: italic;
   font-size: 1.6em;
   text-align: center;
+  padding-top: 20px;
   &::after {
     content: '\201d';
     font-family: serif;
+    position: absolute;
+    font-size: 1.8em;
   }
 }
 
@@ -54,6 +47,19 @@ blockquote {
     position: absolute;
     bottom: 20px;
     right: 45px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-right {
+    &::before {
+      font-size: 3em;
+    }
+  }
+  .main-right {
+    p {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -97,7 +103,6 @@ blockquote {
   }
 }
 
-
 .main-2 {
   height: 400px;
   position: relative;
@@ -135,30 +140,30 @@ blockquote {
   right: -50px;
 }
 
-.news{
+.news {
   height: 400px;
   width: 100%;
   display: none;
   flex-direction: row;
 }
 
-.visible{
+.visible {
   display: flex;
 }
 
-.image-slider{
+.image-slider {
   width: 60%;
   padding: 30px;
 
 }
 
-.text-slider{
+.text-slider {
   min-width: 40%;
   padding: 30px;
-  h4{
+  h4 {
     font-size: 2em;
   }
-  p{
+  p {
     padding-top: 10px;
   }
 }

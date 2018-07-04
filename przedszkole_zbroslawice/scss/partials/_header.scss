@@ -12,8 +12,8 @@ a {
 
 
 header {
-  height: 550px;
-  background-image: url('../images/cover1.jpg');
+  height: 430px;
+  background-image: url('../images/cover.jpg');
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,21 +27,16 @@ header {
 nav {
   margin: 0 auto;
   z-index: 1;
-
-
   ul {
     background-color: rgba(255, 187, 98, 0.8);
     display: flex;
     flex-direction: column;
-
-
     li {
       list-style-type: none;
       &:hover {
         background-color: rgba(0, 0, 0, .25);
         //text-decoration: underline;
         //border: 1px solid black;
-
       }
       a {
         text-decoration: none;
@@ -50,7 +45,6 @@ nav {
         color: #000;
         font-weight: 500;
         font-size: 1.3em;
-
       }
     }
   }
@@ -60,11 +54,11 @@ nav > ul > li > ul {
   display: none;
 }
 
-.has-children {
-  ul {
-    top: 65px;
-  }
-}
+//.has-children {
+//  ul {
+//    top: 10px;
+//  }
+//}
 
 .home {
   font-weight: 700;
@@ -88,18 +82,32 @@ nav > ul > li > ul {
 }
 
 @media only screen and (max-width: 480px) {
-  .has-children {
+  nav {
     ul {
+      width: 200px;
       li {
         a {
-          padding-left: 2em;
+          font-size: 1.1em;
+          padding: 7px 5px;
+        }
+      }
+      .has-children {
+        ul {
+          width: 200px;
+          margin-left: 3em;
+          li {
+            a {
+              padding-left: 2em;
+              font-size: 1.1em;
+            }
+          }
         }
       }
     }
   }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 550px) {
   nav {
     ul {
       flex-direction: row;
@@ -117,12 +125,16 @@ nav > ul > li > ul {
       display: none;
       flex-direction: column;
       position: absolute;
-      width: 100%;
+      width: 100px;
     }
   }
 }
 
-
+@media only screen and (max-width: 360px) {
+header{
+  height: 330px;
+}
+}
 
 
 
